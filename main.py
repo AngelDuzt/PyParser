@@ -29,7 +29,7 @@ def get_pages_count(html):
 
 def get_content(html):
     soup = BeautifulSoup(html, 'html.parser')
-    items = soup.find_all('div', class_= 'item')
+    items = soup.find_all('div', class_= 'item')  #comment for github_fork
     sites = []
     for item in items:
        a = item.find('a')['href']
